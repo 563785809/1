@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+	#nav  .car a{
+		color: #00;text-decoration: none;font: 14px/20px;line-height: 32px;
+		display: block;padding: 0 40px;width: 60px;
+	}
+	#nav .car a:hover{
+		color: #fff;text-decoration: none; background-color: red;color: yellow}
+		</style>
+
+
+</head>
+
+<body>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function)(){
+		$('li.car').mousemove(function)(){
+			$(this).find('ul').slideDown();
+		});
+        $('li.car').mouseleave(function(){
+        	$(this).find('ul').slideUp("fast");
+        });
+	});
+</script>
+<div id="menu">
+<ul id="nav">
+	<li class="jquery_out">
+	<div class="jquery">
+	<div class="jquery_out">
+	<span class="text">首页</span>	
+	</div>
+	</div>
+	</li>
+	<li calss="car" id="car1_1">
+	<a href="#" target="_blank">全部车型</a>
+	<ul id="one">
+		<li><a href="#" target="_blank">微型轿车</a></li>
+		<li><a href="#" target="_blank">微型轿车</a></li>
+		<li><a href="#" target="_blank">中级轿车</a></li>
+		<li><a href="#" target="_blank">中高级轿车</a></li>
+		<li><a href="#" target="_blank">高级轿车</a></li>
+
+	</ul>
+		
+	</li>
+</ul>
+</div>
+
+
+</body>
+</html>
